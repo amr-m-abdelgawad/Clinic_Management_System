@@ -150,15 +150,15 @@ void View_Patient(u32 User_ID)
 		if (ptr->ID == User_ID)
 		{
 			Patient_Found = YES;
-			printf("\n-> Patient ID:	%d\n	Name: %s	Age: %d\n	Gender: ", ptr->ID, ptr->Name, ptr->Age);
+			printf("\n-> Patient ID:\t%d\n	Name: %s\tAge: %d\n\tGender: ", ptr->ID, ptr->Name, ptr->Age);
 			if (ptr->Gender == MALE)
 				printf("Male");
 			else
 				printf("Female");
 			if (ptr->Reservation == 1)
-				printf("\n	Patient in Reservation.");
+				printf("\n\tPatient in Reservation.");
 			else
-				printf("\n	Patient is not in Reservation.");
+				printf("\n\tPatient is not in Reservation.");
 			printf("\n");
 			break;
 		}
